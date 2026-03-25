@@ -7,7 +7,7 @@
 
 **Tools Used**
 - SQL (MySQL)
-- GitHub**
+- GitHub
 
 The objective of this project is to analyze pizza sales data using SQL to understand overall sales performance and revenue trends. The analysis aims to identify the most popular and least popular pizzas, examine sales distribution across different pizza categories and sizes, and determine peak ordering times. Also, the project focuses on analyzing daily and monthly sales trends and generating useful business insights that can help improve sales strategies and decision-making.
 
