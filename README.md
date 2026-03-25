@@ -238,9 +238,9 @@ LIMIT 3;
 ```
 
 ## Key Insights
-- ** Large-sized pizzas contributed the most to total revenue.
-- ** Sales are higher during evening hours
-- ** Classic category pizzas generated the highest number of orders
+-  Large-sized pizzas contributed the most to total revenue.
+-  Sales are higher during evening hours
+-  Classic category pizzas generated the highest number of orders
 
   
 ## Reports
