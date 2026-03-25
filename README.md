@@ -32,18 +32,18 @@ USE pizza_store;
 -- Create table "pizza_types"
 DROP TABLE IF EXISTS pizza_types;
 CREATE TABLE pizza_types (
-	pizza_type_id  varchar(50) PRIMARY KEY,
-	name	   varchar(50),
-            category	   varchar(30),
-            ingredients    varchar(350)
+	          pizza_type_id  varchar(50) PRIMARY KEY,
+	          name	   varchar(50),
+              category	   varchar(30),
+              ingredients    varchar(350)
 );
 
 
 -- Create table "Pizzas"
 DROP TABLE IF EXISTS pizzas;
 CREATE TABLE pizzas (
-	pizza_id        varchar(100) PRIMARY KEY,
-	pizza_type_id   varchar(50),
+	        pizza_id        varchar(100) PRIMARY KEY,
+	        pizza_type_id   varchar(50),
             size	    varchar(10),
             price           float,
             FOREIGN KEY (pizza_type_id) REFERENCES pizza_types(pizza_type_id)
@@ -129,7 +129,7 @@ ORDER BY SUM(quantity) DESC
 LIMIT 5;
 ```
 
-- **Task 6: Join the necessary tables to find the total quantity of each pizza category ordered.**
+**Task 6: Join the necessary tables to find the total quantity of each pizza category ordered.**
 
 ```sql
 SELECT pt.category, sum(quantity) as total_quantity_ordered
