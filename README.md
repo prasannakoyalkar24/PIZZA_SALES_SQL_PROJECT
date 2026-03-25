@@ -142,7 +142,7 @@ GROUP BY pt.category
 ORDER BY 2 DESC;
 ```
 
- 7. **Task 7.Determine the distribution of orders by hour of the day.**:
+**Task 7: Determine the distribution of orders by hour of the day.**:
 
 ```sql
 SELECT DISTINCT hour(order_time) as hours, count(order_id) 
@@ -151,7 +151,7 @@ GROUP BY hours
 ORDER BY hours;
 ```
 
-8. **Task 8: Join relevant tables to find the category-wise distribution of pizzas.**:
+ **Task 8: Join relevant tables to find the category-wise distribution of pizzas.**:
 
 ```sql
 SELECT category , COUNT(name)
@@ -159,7 +159,7 @@ SELECT category , COUNT(name)
 GROUP BY category;
 ```
 
-9. **Group the orders by date and calculate the average number of pizzas ordered per day.**:
+**Task 9: Group the orders by date and calculate the average number of pizzas ordered per day.**:
    
 ```sql
 SELECT 
@@ -172,7 +172,7 @@ ON o.order_id = od.order_id
 GROUP BY order_date) as order_quantity;
 ```
 
-10. **Determine the top 3 most ordered pizza types based on revenue**:
+**Task 10: Determine the top 3 most ordered pizza types based on revenue**:
 
 ```sql
 SELECT name , SUM(od.quantity * p.price) as revenue
@@ -186,7 +186,7 @@ ORDER BY  revenue DESC
 LIMIT 3;
 ```
 
-Task 11. **Calculate the percentage contribution of each pizza type to total revenue**:
+ **Task 11: Calculate the percentage contribution of each pizza type to total revenue**:
 
 ```sql
 SELECT category , 
@@ -207,7 +207,7 @@ ORDER BY percentage DESC;
 
 ```
 
-Task 12: **Analyze the cumulative revenue generated over time.**
+ **Task 12: Analyze the cumulative revenue generated over time.**
 
 ```sql
 SELECT order_date , 
